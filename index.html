@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Twisted Guessing Game</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <div class="container fade-in">
+    <h2>🎮 Twisted Guessing Game</h2>
+    <p>Guess a number between 1 and 100.</p>
+    <button onclick="startGame()">Start Game</button>
+
+    <div id="gameArea" class="hidden">
+      <input type="number" id="guessInput" placeholder="Enter your guess..." autofocus />
+      <p class="message" id="feedback"></p>
+      <p class="message" id="roast"></p>
+      <p id="attemptsInfo"></p>
+      <p id="endMessage"></p>
+      <p id="bestScore"></p>
+    </div>
+  </div>
+
+  <audio id="ding" src="https://www.soundjay.com/buttons/sounds/button-09.mp3"></audio>
+  <audio id="buzz" src="https://www.soundjay.com/button/sounds/beep-10.mp3"></audio>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
